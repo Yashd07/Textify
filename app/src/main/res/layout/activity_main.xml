@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@color/off_white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/rl_text"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_bg"
+        android:rowCount="2"
+        android:padding="10dp"
+        android:columnCount="2"
+        android:layout_weight="3">
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_imgtxt"
+    android:layout_width="0dp"
+    android:layout_margin="10dp"
+    android:layout_height="0dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp"
+    android:backgroundTint="@color/off_white_light"
+    android:layout_columnWeight="1"
+    android:layout_rowWeight="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:src="@drawable/image_converter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/img_text"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_translatetxt"
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:layout_height="0dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="4dp"
+            android:backgroundTint="@color/off_white_light"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/language_convert" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/lng_translate"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_voicetxt"
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:layout_height="0dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="4dp"
+            android:backgroundTint="@color/off_white_light"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:src="@drawable/voice_text"
+                    android:layout_height="80dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/voice_txt"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_pdftxt"
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:layout_height="0dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="4dp"
+            android:backgroundTint="@color/off_white_light"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/pdf" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:text="@string/mke_pdf"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+
+</LinearLayout>

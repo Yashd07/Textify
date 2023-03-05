@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Textify</string>
+    <string name="rl_text">Automate the Text</string>
+    <string name="img_text">Image to text</string>
+    <string name="lng_translate">Translate Text</string>
+    <string name="voice_txt">Voice to Text</string>
+    <string name="mke_pdf">Make a PDF</string>
+
+
+</resources>

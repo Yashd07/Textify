@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white"
+    tools:context=".ImagetextActivity">
+
+    <ImageView
+        android:id="@+id/idIVCaptureImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/image_converter" />
+
+    <TextView
+        android:id="@+id/idTVDetectedtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idIVCaptureImage"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_spinner"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:letterSpacing="0.03"
+        android:padding="16sp"
+        android:text="Your result appear here"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idBtnSnap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVDetectedtext"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="snap"
+        android:textAllCaps="false"
+        android:textSize="25sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/idBtnSnap"
+        android:text="Detect"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:id="@+id/idBtnDetect"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idBtnCopyImageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBtnDetect"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="Copy"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "362220583665",
+    "project_id": "text-detector-764b7",
+    "storage_bucket": "text-detector-764b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362220583665:android:c5f17429ea9a13ea3c8750",
+        "android_client_info": {
+          "package_name": "com.example.textify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362220583665-43tf7ut5moo1m2o8k96cq71jckq5rm1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoTpJAVEruLZQZSAGgcCuyAyK9UMsgS18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362220583665-43tf7ut5moo1m2o8k96cq71jckq5rm1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
